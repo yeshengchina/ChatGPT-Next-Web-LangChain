@@ -360,7 +360,7 @@ export class ChatGPTApi implements LLMApi {
           openWhenHidden: true,
         });
       } else {
-        console.info("[openai 363]", chatPath, chatPayload);
+        console.log("[openai 363]", chatPath, chatPayload);
         const res = await fetch(chatPath, chatPayload);
         clearTimeout(requestTimeoutId);
 
@@ -550,7 +550,7 @@ export class ChatGPTApi implements LLMApi {
           openWhenHidden: true,
         });
       } else {
-        console.info("[openai 553]",path,chatPayload);
+        console.log("[openai 553]",path,chatPayload);
         const res = await fetch(path, chatPayload);
         clearTimeout(requestTimeoutId);
 

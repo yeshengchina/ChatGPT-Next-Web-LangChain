@@ -125,8 +125,8 @@ export async function requestOpenai(req: NextRequest) {
   }
 
   try {
-    console.info("[FetchURL] ", fetchUrl);
-    console.info("[FetchOptions] ", fetchOptions);
+    console.log("[common 128] ", fetchUrl);
+    console.log("[FetchOptions] ", fetchOptions);
     const res = await fetch(fetchUrl, fetchOptions);
 
     // Extract the OpenAI-Organization header from the response

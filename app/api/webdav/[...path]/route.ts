@@ -133,7 +133,7 @@ async function handle(
   let fetchResult;
 
   try {
-    console.info("[route 136]", targetUrl, fetchOptions);
+    console.log("[route 136]", targetUrl, fetchOptions);
     fetchResult = await fetch(targetUrl, fetchOptions);
   } finally {
     console.log(

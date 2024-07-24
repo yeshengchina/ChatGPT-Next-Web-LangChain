@@ -79,7 +79,7 @@ async function handle(
   };
 
   try {
-    console.info("[route 82]", fetchUrl,fetchOptions);
+    console.log("[route 82]", fetchUrl,fetchOptions);
     const res = await fetch(fetchUrl, fetchOptions);
     // to prevent browser prompt for credentials
     const newHeaders = new Headers(res.headers);
