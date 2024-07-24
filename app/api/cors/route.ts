@@ -20,7 +20,7 @@ async function handle(req: NextRequest) {
     // @ts-ignore
     duplex: "half",
   };
-
+  console.info("[route 23]", targetUrl, fetchOptions);
   const fetchResult = await fetch(targetUrl, fetchOptions);
 
   console.log("[Any Proxy]", targetUrl, {
